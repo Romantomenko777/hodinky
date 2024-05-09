@@ -8,7 +8,7 @@ include_once "_inc/header.php";
   <div class="row row-cols-1 row-cols-md-3 g-4 container mx-auto">
     <?php
     $model_objekt = new Model();
-    $modely = $model_objekt->zobrat_vsetky();
+    $modely = $model_objekt->zobrat_vsetko();
 
     for ($i = 0; $i < count($modely); $i++) {
       $model = $modely[$i];

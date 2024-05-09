@@ -12,5 +12,6 @@ $GLOBALS["DATABAZA"] = array(
 require_once "class/Databaza.php";
 require_once "class/Kontakt.php";
 require_once "class/Model.php";
+require_once "class/Pouzivatel.php";
 
 session_start();
