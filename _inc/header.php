@@ -1,3 +1,7 @@
+<?php
+require_once("config.php");
+?>
+
 <!DOCTYPE html>
 <html lang="sk" class="overflow-x-hidden">
 <head>
@@ -44,3 +48,4 @@
                 </div>
             </nav>
     </header>
+    <div style="visibility: hidden; height: 70px;">.</div>

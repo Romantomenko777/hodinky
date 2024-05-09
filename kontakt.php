@@ -35,7 +35,7 @@ include_once "_inc/header.php";
           <div class="col-md col-lg-4 p-4 bg-secondary-subtle border border-secondary rounded">
             <h2 class="fs-3">Kontakt</h2>
             
-            <form method="post" action="/kontakt-dakujeme.php">
+            <form method="post" action="kontakt-dakujeme.php">
               <div class="mb-3">
                 <label for="meno" class="form-label">Meno</label>
                 <input type="text" class="form-control" id="meno" name="meno" required>
