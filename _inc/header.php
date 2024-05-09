@@ -17,7 +17,7 @@
         <div class="header-container">
             <nav class="navbar navbar-expand-sm navbar-light bg-light position-fixed container-fluid">
                 <div class="container-fluid">
-                  <a class="navbar-brand d-flex gap-3 align-items-center" href="index.html">
+                  <a class="navbar-brand d-flex gap-3 align-items-center" href="index.php">
                     <img src="assets/img/logo.png" width="40" alt="Logo"/>
                     <span class="navbar-brand-text fw-bold">Hodinky</span>
                   </a>
@@ -28,16 +28,16 @@
                   <div class="collapse navbar-collapse" id="navigacia">
                     <ul class="navbar-nav me-auto">
                       <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Domov</a>
+                        <a class="nav-link active" aria-current="page" href="index.php">Domov</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="modely.html">Modely</a>
+                        <a class="nav-link" href="modely.php">Modely</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="recenzie.html">Recenzie</a>
+                        <a class="nav-link" href="recenzie.php">Recenzie</a>
                     </li>
                       <li class="nav-item">
-                        <a class="nav-link" href="kontakt.html">Kontakt</a>
+                        <a class="nav-link" href="kontakt.php">Kontakt</a>
                       </li>
                     </ul>
                   </div>
