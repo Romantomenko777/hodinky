@@ -7,7 +7,7 @@ class Pouzivatel extends Databaza
         $sql = "INSERT INTO pouzivatel (meno, email, heslo) VALUES (:meno, :email, :heslo);";
         $dotaz = $this->pdo->prepare($sql);
 
-        $sifra = password_hash($heslo, PASSWORD_DEFAULT);
+        $sifra = md5($heslo);
 
         return $dotaz->execute(
             array(
@@ -38,16 +38,14 @@ class Pouzivatel extends Databaza
         $dotaz = $this->pdo->prepare($sql);
 
         $dotaz->execute();
-
         return $dotaz->fetch();
     }
 
     public function prihlasit($email, $heslo)
     {
         $pouzivatel = $this->zobrat($email);
-
         if ($pouzivatel) {
-            if (password_verify($heslo, $pouzivatel->heslo)) {
+            if (md5($heslo) == $pouzivatel->heslo) {
                 return $pouzivatel;
             } else {
                 return false;

@@ -49,9 +49,22 @@ require_once ("config.php");
               <li class="nav-item">
                 <a class="nav-link" href="kontakt.php">Kontakt</a>
               </li>
+
+              <?php
+              if (isset($_SESSION["rola"])) {
+              ?>
+              <li class="nav-item">
+                <a class="nav-link" href="odhlasit.php">Odhlásiť</a>
+              </li>
+              <?php
+              } else {
+              ?>
               <li class="nav-item">
                 <a class="nav-link" href="prihlasenie.php">Prihlásenie</a>
               </li>
+              <?php
+              }
+              ?>
             </ul>
           </div>
         </div>

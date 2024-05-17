@@ -10,6 +10,7 @@ if (isset($_POST["email"]) && isset($_POST["heslo"])) {
 
     if ($pouzivatel) {
         $_SESSION["meno"] = $pouzivatel->meno;
+        $_SESSION["rola"] = $pouzivatel->rola;
 
         header("Location: index.php");
     } else {
