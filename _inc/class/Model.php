@@ -44,6 +44,20 @@ class Model extends Databaza
         );
     }
 
+    public function zobrat($id)
+    {
+        $sql = "SELECT * FROM model WHERE id = :id;";
+        $dotaz = $this->pdo->prepare($sql);
+
+        $dotaz->execute(
+            array(
+                "id" => $id
+            )
+        );
+
+        return $dotaz->fetch();
+    }
+
     public function zobrat_vsetko()
     {
         $sql = "SELECT * FROM model;";

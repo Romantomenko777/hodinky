@@ -51,7 +51,7 @@ require_once ("config.php");
               </li>
 
               <?php
-              if (isset($_SESSION["rola"])) {
+              if (isset($_SESSION["prihlaseny"])) {
               ?>
               <li class="nav-item">
                 <a class="nav-link" href="odhlasit.php">Odhlásiť</a>

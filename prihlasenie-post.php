@@ -9,8 +9,7 @@ if (isset($_POST["email"]) && isset($_POST["heslo"])) {
     $pouzivatel = $pouzivatel_objekt->prihlasit($email, $heslo);
 
     if ($pouzivatel) {
-        $_SESSION["meno"] = $pouzivatel->meno;
-        $_SESSION["rola"] = $pouzivatel->rola;
+        $_SESSION["prihlaseny"] = true;
 
         header("Location: index.php");
     } else {

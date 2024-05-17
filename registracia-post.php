@@ -12,8 +12,7 @@ if (isset($_POST["meno"]) && isset($_POST["email"]) && isset($_POST["heslo"])) {
     $bol_vytvoreny = $pouzivatel_objekt->vytvorit($meno, $email, $sifra);
 
     if ($bol_vytvoreny) {
-        $_SESSION["meno"] = $meno;
-        $_SESSION["rola"] = $pouzivatel->rola;
+        $_SESSION["prihlaseny"] = true;
         header("Location: index.php");
     } else {
         echo 'Chyba pri vytváraní používateľa. <a href="registracia.php">Skúsiť znovu</a>';
