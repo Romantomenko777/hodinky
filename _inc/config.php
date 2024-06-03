@@ -9,9 +9,6 @@ $GLOBALS["DATABAZA"] = array(
     "PASSWORD" => ""
 );
 
-ini_set("display_errors",1);
-error_reporting(E_ALL);
-
 require_once "class/Databaza.php";
 require_once "class/Kontakt.php";
 require_once "class/Model.php";
