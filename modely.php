@@ -26,7 +26,7 @@ if (isset($_SESSION["prihlaseny"]) && isset($_POST["odstranit"])) {
     $modely = $model_objekt->zobrat_vsetko();
 
     for ($i = 0; $i < count($modely); $i++) {
-      $model = $modely[$i];
+      $model = $modely[$i]; //Цикл for пройдет по каждому элементу массива и выполнит операции, определенные в теле цикла
       ?>
 
       <div class="col">

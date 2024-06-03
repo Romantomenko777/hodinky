@@ -5,7 +5,7 @@ class Kontakt extends Databaza {
         $sql = "INSERT INTO kontakt (meno, email, sprava) VALUES (:meno, :email, :sprava);";
         $dotaz = $this->pdo->prepare($sql);
 
-        return $dotaz->execute(array(
+        return $dotaz->execute(array( 
             "meno" => $meno,
             "email" => $email,
             "sprava" => $sprava)
